@@ -1,0 +1,550 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Roboto Mono', monospace;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(90deg, rgba(9,9,121,1) 33%, rgba(0,212,255,1) 100%);
+  overflow-y: auto;
+   overflow-x: hidden;
+  position: relative;
+
+
+
+  
+  }
+
+header {
+position:fixed;
+top: 0;
+margin: 0;
+padding: 0;
+background-color:rgba(0,212,255,0.5);
+width: 100%;
+height: 60px;
+z-index: 10;
+}
+
+
+
+@keyframes float {
+  0% {
+ 
+    transform: translatey(0px);
+  }
+  50% {
+   
+    transform: translatey(-20px);
+  }
+  100% {
+    
+    transform: translatey(0px);
+  }
+}
+
+
+@keyframes loadimg{
+ from{
+ 
+    left: -500px;
+  }
+  to {
+   
+    left: 0px;
+  }
+
+}
+
+
+@keyframes loadthp{
+ from{
+ 
+    left: 1000px;
+  }
+  to {
+   
+    left: 0px;
+  }
+
+}
+
+
+a{
+  padding-left: 50px;
+  padding-right: 50px;
+  color: white;
+  text-decoration:none; 
+}
+
+#navbar >table {
+margin-left: auto;
+margin-right: auto;
+margin-top: 20px;
+font-size: 20px;
+
+}
+
+#page{
+
+margin-right: 70px;
+margin-left: 70px;
+
+}
+
+#welcome-section{
+
+text-align: center;
+color: white;
+margin-top: 100px;
+padding: 0;
+transform: translatey(0px);
+animation: float 6s ease-in-out infinite;
+animation-delay: 3s;
+
+
+}
+
+
+#welcome-section > table{
+margin:auto;
+}
+
+
+ #welcome-section >h1{
+  margin-bottom: 30px;
+  font-size:87px; 
+  animation-name: loadimg;
+  animation-duration: 2s;
+  animation-iteration-count: initial;
+  animation-direction: normal;
+  position: relative;
+}
+
+
+
+#pe{
+
+  animation-name: loadthp;
+  animation-duration: 2s;
+  animation-iteration-count: inherit;
+  animation-direction: normal;
+  position: relative;
+  padding: 110px 200px;
+  background-image: url('https://i.pinimg.com/originals/84/36/a7/8436a79ce5a3400422924d9ebe945e24.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: rgba(0,212,255,0.5);
+  border-radius: 1rem;
+ 
+
+
+}
+
+th>p{
+color:white;
+text-align: left;
+font-size: 40px;
+margin: 0 0 0 320px;
+padding: 0;
+}
+
+#img_me, th>h1 {
+
+  color: white;
+  animation-name: loadimg;
+  animation-duration: 2s;
+  animation-iteration-count: inherit;
+  animation-direction: normal;
+  position: relative;
+
+}
+
+#img_me {
+padding: 10px;
+border-radius: 1rem; 
+
+
+}
+
+#projects{
+  margin-top: 100px;
+  padding: 10px 20px;
+  background-color:rgba(0,212,255,0.3);
+  border-radius: 1rem;
+  text-align:center;
+  color: rgba(0,212,255);
+
+}
+
+#projects >h1{
+
+font-size:40px; 
+color: white;
+}
+
+#projects >li{
+list-style: none;
+}
+
+#mini-projects{
+list-style: none;
+
+}
+
+li{
+  list-style: none;
+}
+
+#direction{
+display: flex;
+flex-direction: row;
+list-style: none;
+padding: 40px;
+background-color: rgba(255,255,255,0.850);
+border-radius: 2rem;
+margin-bottom: 100px;
+}
+
+#direction >ul >li >h2{
+padding: 0 20px;
+color: black;
+margin-top: 0;
+text-align: center; 
+font-size: 50px; 
+
+}
+
+#direction >ul >li >a >img{
+
+position: relative;
+border-radius: 2rem;  
+border: 15px solid rgb(0,212,255);
+width: 500px;
+transform: translatey(0px);
+animation: float 2s ease-in-out infinite;
+}
+
+
+#direction >ul >li >a >img:hover{
+
+border: 15px solid red;
+
+}
+
+
+
+#direction >ul >li >p{
+  color: black;
+  text-align: center;
+  font-size: 30px;
+
+}
+
+
+#Contact{
+  display: block;
+  margin-top:0;
+  margin-bottom: 20px;
+}
+
+
+.Contact-move {
+  font-size: 30px;
+  color: white;
+  transition: transform 0.3s ease-out;
+}
+
+.Contact-move:hover {
+  transform: translateY(8px);
+}
+
+#direction_2{
+
+justify-content: center;
+display: flex;
+font-size: 50px;
+color: white;
+flex-direction: row;
+
+}
+
+
+
+#direction_2 >img{
+width: 150px;
+}
+
+
+footer{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align:right;
+  color: white;
+}
+
+
+@media (max-width: 800px){
+
+
+#welcome-section >h1{
+  font-size:60px; 
+ 
+}
+
+#pe{
+  
+  padding: 0;
+  background-image: none;
+  border-radius: 1rem;
+
+}
+
+th>p{
+color:white;
+margin: 0 ;
+padding: 3px;
+}
+
+#direction{
+
+flex-direction: column;
+
+
+}
+
+#direction >ul{
+
+padding: 0;
+margin:0;
+
+
+}
+
+#direction >ul >li >h2{
+font-size: 40px;
+
+}
+
+#direction >ul >li >a >img{
+
+padding: 0;
+margin:0;
+width: 400px;
+
+}
+
+
+}
+
+
+@media (max-width: 600px){
+
+a {
+ padding-left: 20px;
+ padding-right: 20px; 
+}
+
+#page{
+
+margin-right: 20px;
+margin-left: 20px;
+
+}
+
+#welcome-section >h1{
+  font-size:40px; 
+ 
+}
+
+#img_me{
+  width: 200px;
+}
+
+#pe{
+  
+  padding: 0;
+  background-image: none;
+  border-radius: 1rem;
+
+}
+
+th>p{
+color:white;
+margin: 0 ;
+padding: 3px;
+}
+
+
+#direction >ul >li >h2{
+font-size: 30px;
+
+}
+
+#direction >ul >li >p{
+font-size: 20px;
+
+}
+
+#direction >ul >li >a >img{
+
+padding: 0;
+margin:0;
+width: 300px;
+border: 10px solid rgb(0,212,255);
+
+}
+
+#direction >ul >li >a >img:hover{
+
+border: 10px solid red;
+
+}
+
+#Contact >a{
+
+font-size: 20px;
+
+  }
+  }
+
+@media (max-width: 1080px){
+
+
+#welcome-section >h1{
+  font-size:60px; 
+ 
+}
+
+#pe{
+  
+  padding: 0;
+  background-image: none;
+  border-radius: 1rem;
+
+}
+
+th>p{
+color:white;
+margin: 0 ;
+padding: 3px;
+}
+
+#direction{
+
+flex-direction: column;
+
+
+}
+
+#direction >ul{
+
+padding: 0;
+margin:0;
+
+
+}
+
+#direction >ul >li >h2{
+font-size: 40px;
+
+}
+
+#direction >ul >li >a >img{
+
+padding: 0;
+margin:0;
+width: 400px;
+
+}
+
+
+}
+
+
+@media (max-width: 400px){
+
+a {
+ padding-left: 20px;
+ padding-right: 20px; 
+}
+
+#page{
+
+margin-right: 20px;
+margin-left: 20px;
+
+}
+
+#welcome-section >h1{
+  font-size:40px; 
+ 
+}
+
+#img_me{
+  width: 100px;
+}
+
+#pe{
+  
+  padding: 0;
+  background-image: none;
+  border-radius: 1rem;
+
+}
+
+th>p{
+color:white;
+margin: 0 ;
+padding: 3px;
+font-size:30px;
+}
+
+
+  #direction{
+    margin-bottom:50px;
+  }
+  
+#direction >ul >li >h2{
+font-size: 20px;
+
+}
+
+#direction >ul >li >p{
+font-size: 15px;
+
+}
+
+#direction >ul >li >a >img{
+
+padding: 0;
+margin:0;
+width: 150px;
+border: 5px solid rgb(0,212,255);
+
+}
+
+#direction >ul >li >a >img:hover{
+
+border: 5px solid red;
+
+}
+
+#direction_2{
+
+  font-size:30px;
+  
+  }  
+  
+#Contact >a{
+
+font-size: 12px;
+
+}
+
+}
